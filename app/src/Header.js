@@ -3,31 +3,30 @@ import { Menu } from 'antd';
 import { PictureOutlined, BgColorsOutlined, SoundOutlined } from '@ant-design/icons';
 
 class Header extends React.Component {
-  state = {
-    current: 'screen-matrix',
-  };
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
 
   handleClick = e => {
     console.log('click ', e);
-    this.setState({ current: e.key });
+    this.props.updateState({ selected: e.key });
   };
 
   render() {
-    const { current } = this.state;
+    const { selected } = this.props.state;
     return (
-      <div className="App">
-        <Menu onClick={this.handleClick} selectedKeys={[current]} mode="horizontal">
-          <Menu.Item key="screen-matrix" icon={<PictureOutlined />}>
-            Screen Matrix
-          </Menu.Item>
-          <Menu.Item key="color-picker" icon={<BgColorsOutlined />}>
-            Color Picker
-          </Menu.Item>
-          <Menu.Item key="sound-effect" icon={<SoundOutlined />}>
-            Sound Effect
-          </Menu.Item>
-        </Menu>
-      </div>
+      <Menu onClick={this.handleClick} selectedKeys={[selected]} mode="horizontal">
+        <Menu.Item key="screen" icon={<PictureOutlined />}>
+          Screen Matrix
+        </Menu.Item>
+        <Menu.Item key="color" icon={<BgColorsOutlined />}>
+          Color Picker
+        </Menu.Item>
+        <Menu.Item key="audio" icon={<SoundOutlined />}>
+          Audio Spectrum
+        </Menu.Item>
+      </Menu>
     );
   }
 }
