@@ -1,4 +1,6 @@
 const { app, BrowserWindow } = require('electron')
+const isDev = require('electron-is-dev')
+const path = require('path')
 
 function createWindow () {
   const win = new BrowserWindow({
@@ -9,11 +11,11 @@ function createWindow () {
     }
   })
 
-  if (process.env.NODE_ENV !== 'production') {
+  if (isDev) {
     win.loadURL('http://localhost:3000')
     win.webContents.openDevTools()
   } else {
-    win.loadFile()
+    win.loadFile(path.join(__dirname, '../build/index.html'))
   }
 }
 
