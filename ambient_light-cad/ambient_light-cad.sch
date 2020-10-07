@@ -1,4 +1,193 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-AU U1
+U 1 1 5F7D81FA
+P 5650 5800
+F 0 "U1" H 5650 4211 50  0000 C CNN
+F 1 "ATmega328P-AU" H 5650 4120 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 5650 5800 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 5650 5800 50  0001 C CNN
+	1    5650 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5F7DA202
+P 7000 8000
+F 0 "#PWR02" H 7000 7750 50  0001 C CNN
+F 1 "GND" H 7005 7827 50  0000 C CNN
+F 2 "" H 7000 8000 50  0001 C CNN
+F 3 "" H 7000 8000 50  0001 C CNN
+	1    7000 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 5F7DA994
+P 5650 3950
+F 0 "#PWR01" H 5650 3800 50  0001 C CNN
+F 1 "VCC" H 5665 4123 50  0000 C CNN
+F 2 "" H 5650 3950 50  0001 C CNN
+F 3 "" H 5650 3950 50  0001 C CNN
+	1    5650 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4300 5650 4150
+Wire Wire Line
+	5750 4300 5750 4150
+Wire Wire Line
+	5750 4150 5650 4150
+Connection ~ 5650 4150
+Wire Wire Line
+	5650 4150 5650 3950
+Wire Wire Line
+	6250 5200 6500 5200
+Wire Wire Line
+	6250 5300 6500 5300
+Text Label 6500 5200 0    50   ~ 0
+XTAL1
+Text Label 6500 5300 0    50   ~ 0
+XTAL2
+Wire Wire Line
+	6250 6300 6500 6300
+Wire Wire Line
+	6250 6400 6500 6400
+Text Label 6500 6300 0    50   ~ 0
+RX
+Text Label 6500 6400 0    50   ~ 0
+TX
+$Comp
+L Device:Crystal_GND24 Y?
+U 1 1 5F802814
+P 8900 4950
+F 0 "Y?" V 8650 4400 50  0000 L CNN
+F 1 "14.4756MHz" V 8750 4400 50  0000 L CNN
+F 2 "" H 8900 4950 50  0001 C CNN
+F 3 "~" H 8900 4950 50  0001 C CNN
+	1    8900 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F802CCD
+P 8050 6300
+F 0 "R?" V 8150 6200 50  0000 C CNN
+F 1 "1k" V 8150 6350 50  0000 C CNN
+F 2 "" V 7980 6300 50  0001 C CNN
+F 3 "~" H 8050 6300 50  0001 C CNN
+	1    8050 6300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F80312A
+P 8050 6800
+F 0 "R?" V 8150 6700 50  0000 C CNN
+F 1 "1k" V 8150 6850 50  0000 C CNN
+F 2 "" V 7980 6800 50  0001 C CNN
+F 3 "~" H 8050 6800 50  0001 C CNN
+	1    8050 6800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7900 6300 7700 6300
+Wire Wire Line
+	7900 6800 7700 6800
+Wire Wire Line
+	8200 6800 8400 6800
+Wire Wire Line
+	8200 6300 8400 6300
+Text Label 7700 6300 0    50   ~ 0
+RX
+Text Label 7700 6800 0    50   ~ 0
+TX
+$Comp
+L power:GND #PWR?
+U 1 1 5F809986
+P 9300 6100
+F 0 "#PWR?" H 9300 5850 50  0001 C CNN
+F 1 "GND" H 9305 5927 50  0000 C CNN
+F 2 "" H 9300 6100 50  0001 C CNN
+F 3 "" H 9300 6100 50  0001 C CNN
+	1    9300 6100
+	1    0    0    -1  
+$EndComp
+Text Label 8300 5150 0    50   ~ 0
+XTAL1
+Text Label 8300 5250 0    50   ~ 0
+XTAL2
+Wire Wire Line
+	8900 4750 9300 4750
+Wire Wire Line
+	8900 4750 8900 4800
+$Comp
+L Device:C C?
+U 1 1 5F8054C8
+P 8900 5550
+F 0 "C?" H 9000 5700 50  0000 R CNN
+F 1 "18pF" H 8900 5700 50  0000 R CNN
+F 2 "" H 8938 5400 50  0001 C CNN
+F 3 "~" H 8900 5550 50  0001 C CNN
+	1    8900 5550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8900 5150 8300 5150
+Wire Wire Line
+	9300 4750 9300 5250
+Wire Wire Line
+	9300 5250 8300 5250
+Wire Wire Line
+	8900 5100 8900 5150
+Wire Wire Line
+	8900 5150 8900 5400
+Connection ~ 8900 5150
+Connection ~ 9300 5250
+Wire Wire Line
+	9300 5250 9300 5400
+$Comp
+L Device:C C?
+U 1 1 5F8080AE
+P 9300 5550
+F 0 "C?" H 9350 5700 50  0000 C CNN
+F 1 "18pF" H 9200 5700 50  0000 C CNN
+F 2 "" H 9338 5400 50  0001 C CNN
+F 3 "~" H 9300 5550 50  0001 C CNN
+	1    9300 5550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8900 5700 8900 5900
+Wire Wire Line
+	9300 5700 9300 5900
+Wire Wire Line
+	8700 4950 8700 5900
+Wire Wire Line
+	8700 5900 8900 5900
+Connection ~ 8900 5900
+Wire Wire Line
+	8900 5900 9100 5900
+Wire Wire Line
+	9100 4950 9100 5900
+Connection ~ 9100 5900
+Wire Wire Line
+	9100 5900 9300 5900
+Wire Wire Line
+	9300 5900 9300 6100
+Connection ~ 9300 5900
 $EndSCHEMATC
