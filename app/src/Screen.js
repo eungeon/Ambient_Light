@@ -1,18 +1,21 @@
 import React, { useRef } from 'react';
+import { Card } from 'antd'
+const { desktopCapturer, remote } = window.require('electron')
+const { powerMonitor } = remote
 
 function Screen() {
-  const videoRef = useRef();
-  const canvasRef = useRef();
+  const videoRef = useRef()
+  const canvasRef = useRef()
 
-  if (window.require) {
-    const { desktopCapturer } = window.require('electron');
-
-    desktopCapturer.getSources({ types: ['window', 'screen'] })
-      .then(async sources => {
-        console.log(sources)
-      })
-  } else {
-    navigator.mediaDevices.getDisplayMedia({ video: true })
+  function getUserMedia(sources) {
+    navigator.mediaDevices.getUserMedia({
+      video: {
+        mandatory: {
+          chromeMediaSource: 'desktop',
+          chromeMediaSourceId: sources[0].id
+        }
+      }
+    })
       .then(stream => {
         const video = videoRef.current
         video.srcObject = stream;
@@ -21,14 +24,25 @@ function Screen() {
         const canvas = canvasRef.current
         const context = canvas.getContext('2d')
         setInterval(() => {
-          context.drawImage(video, 0, 0, aspectRatio * 30, 30);
-        }, 1000 / stream.getVideoTracks()[0].getSettings().frameRate);
+          context.drawImage(video, 0, 0, aspectRatio * 30, 30)
+        }, 1000 / stream.getVideoTracks()[0].getSettings().frameRate)
       })
   }
 
+  desktopCapturer.getSources({ types: ['screen'] })
+    .then(async sources => {
+      getUserMedia(sources)
+
+      powerMonitor.on('lock-screen', ()=>{
+        getUserMedia(sources)
+      })
+    })
+
   return (
     <React.Fragment>
-      <video muted ref={videoRef} autoPlay />
+      <Card bordered={false}>
+        <video ref={videoRef} muted autoPlay style={{ width: '100%' }} />
+      </Card>
       <canvas ref={canvasRef} />
     </React.Fragment>
   );
