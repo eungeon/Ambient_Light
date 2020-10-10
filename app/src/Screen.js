@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef } from 'react'
 import { Card } from 'antd'
 const { desktopCapturer, remote } = window.require('electron')
 const { powerMonitor } = remote
@@ -18,11 +18,13 @@ function Screen() {
     })
       .then(stream => {
         const video = videoRef.current
-        video.srcObject = stream;
+        video.srcObject = stream
         const aspectRatio = stream.getVideoTracks()[0].getSettings().aspectRatio
 
         const canvas = canvasRef.current
         const context = canvas.getContext('2d')
+        canvas.width = aspectRatio * 30
+        canvas.height = 30
         setInterval(() => {
           context.drawImage(video, 0, 0, aspectRatio * 30, 30)
         }, 1000 / stream.getVideoTracks()[0].getSettings().frameRate)
@@ -40,12 +42,14 @@ function Screen() {
 
   return (
     <React.Fragment>
-      <Card bordered={false}>
+      <Card bordered={false} style={{ display: 'none' }}>
         <video ref={videoRef} muted autoPlay style={{ width: '100%' }} />
       </Card>
-      <canvas ref={canvasRef} />
+      <Card bordered={false}>
+        <canvas ref={canvasRef} style={{ width: '100%' }} />
+      </Card>
     </React.Fragment>
-  );
+  )
 }
 
-export default Screen;
+export default Screen
