@@ -42,11 +42,11 @@ function Screen() {
 
   return (
     <React.Fragment>
-      <Card bordered={false} style={{ display: 'none' }}>
-        <video ref={videoRef} muted autoPlay style={{ width: '100%' }} />
+      <Card bordered={false} style={{ width: '100%', position: 'absolute' }}>
+        <canvas ref={canvasRef} style={{ width: '100%', filter: 'blur(10px)' }} />
       </Card>
-      <Card bordered={false}>
-        <canvas ref={canvasRef} style={{ width: '100%' }} />
+      <Card bordered={false} style={{ background: 'rgba(0, 0, 0, 0)' }}>
+        <video ref={videoRef} muted autoPlay style={{ width: '100%' }} />
       </Card>
     </React.Fragment>
   )
