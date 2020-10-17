@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Regulator_Switching:LMR14050SDDAR U?
-U 1 1 5F8C0E9F
-P 3250 2100
-F 0 "U?" H 3250 2567 50  0000 C CNN
-F 1 "LMR14050SDDAR" H 3250 2476 50  0000 C CNN
-F 2 "Package_SO:TI_SO-PowerPAD-8_ThermalVias" H 3300 1650 50  0001 L CIN
-F 3 "http://www.ti.com/lit/ds/symlink/tps54360.pdf" H 3250 2100 50  0001 C CNN
-	1    3250 2100
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0101
 U 1 1 5F8C56C2
 P 3150 2800
@@ -133,14 +122,14 @@ F 3 "~" H 2300 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ambient_light-cad-cache:Device_C C?
-U 1 1 5F8EE363
-P 1600 2700
-F 0 "C?" H 1715 2746 50  0000 L CNN
-F 1 "Device_C" H 1715 2655 50  0000 L CNN
-F 2 "" H 1638 2550 50  0001 C CNN
-F 3 "" H 1600 2700 50  0001 C CNN
-	1    1600 2700
+L ambient_light-cad:LMR14050SDDAR U?
+U 1 1 5F91AED1
+P 3250 2100
+F 0 "U?" H 3250 2567 50  0000 C CNN
+F 1 "LMR14050SDDAR" H 3250 2476 50  0000 C CNN
+F 2 "Package_SO:TI_SO-PowerPAD-8_ThermalVias" H 3300 1650 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tps54360.pdf" H 3250 2100 50  0001 C CNN
+	1    3250 2100
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
