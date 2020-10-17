@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name ambient_light-cad-cache)(type Legacy)(uri ${KIPRJMOD}/ambient_light-cad-cache.lib)(options "")(descr ""))
+)

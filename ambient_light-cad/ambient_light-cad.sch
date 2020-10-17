@@ -132,4 +132,15 @@ F 3 "~" H 2300 2700 50  0001 C CNN
 	1    2300 2700
 	1    0    0    -1  
 $EndComp
+$Comp
+L ambient_light-cad-cache:Device_C C?
+U 1 1 5F8EE363
+P 1600 2700
+F 0 "C?" H 1715 2746 50  0000 L CNN
+F 1 "Device_C" H 1715 2655 50  0000 L CNN
+F 2 "" H 1638 2550 50  0001 C CNN
+F 3 "" H 1600 2700 50  0001 C CNN
+	1    1600 2700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
