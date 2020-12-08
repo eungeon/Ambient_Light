@@ -76,8 +76,6 @@ F 3 "" H 3400 1000 50  0001 C CNN
 	1    3400 1000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3400 1100 3400 1250
 $Comp
 L Device:C_Small C?
 U 1 1 5F8D7B1F
@@ -258,15 +256,12 @@ L Device:D_Schottky D?
 U 1 1 5F8F7CE5
 P 5400 1800
 F 0 "D?" V 5354 1880 50  0000 L CNN
-F 1 "D_Schottky" V 5445 1880 50  0000 L CNN
+F 1 "SS54CF" V 5445 1880 50  0000 L CNN
 F 2 "" H 5400 1800 50  0001 C CNN
 F 3 "~" H 5400 1800 50  0001 C CNN
 	1    5400 1800
 	0    1    1    0   
 $EndComp
-Connection ~ 3400 1250
-Wire Wire Line
-	3400 1250 3400 1700
 Wire Wire Line
 	3900 1400 3900 1700
 Wire Wire Line
@@ -282,8 +277,6 @@ Wire Wire Line
 	4000 1400 3900 1400
 Wire Wire Line
 	3400 1100 4000 1100
-Wire Wire Line
-	3400 1250 4000 1250
 Wire Wire Line
 	4900 2000 4900 1900
 $Comp
@@ -526,4 +519,7 @@ Wire Wire Line
 	2600 2000 2600 1900
 Wire Wire Line
 	2600 1000 2600 1700
+Wire Wire Line
+	3400 1100 3400 1700
+NoConn ~ 4000 1250
 $EndSCHEMATC
