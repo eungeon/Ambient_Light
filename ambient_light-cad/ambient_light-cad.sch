@@ -103,17 +103,6 @@ F 3 "http://www.datasheet5.com/pdf-local-2195953" H 3150 3250 50  0001 C CNN
 	1    3500 2450
 	1    0    0    -1  
 $EndComp
-$Comp
-L ambient_light-cad-rescue:USB_C_Plug_USB2.0-Connector P?
-U 1 1 5F7DF33C
-P 13650 4150
-F 0 "P?" H 13757 5017 50  0000 C CNN
-F 1 "USB_C_Plug_USB2.0" H 13757 4926 50  0000 C CNN
-F 2 "" H 13800 4150 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 13800 4150 50  0001 C CNN
-	1    13650 4150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5650 7300 5650 7400
 $Comp
@@ -219,8 +208,6 @@ Text Label 6500 6100 0    50   ~ 0
 Reset
 Text Label 4500 2750 0    50   ~ 0
 Reset
-Wire Wire Line
-	14250 3550 14450 3550
 Wire Wire Line
 	3500 3050 3500 3100
 $Comp
@@ -982,19 +969,6 @@ F 3 "~" H 6650 2600 50  0001 C CNN
 	1    6650 2600
 	-1   0    0    -1  
 $EndComp
-$Comp
-L power:VBUS #PWR?
-U 1 1 5FCFCE9E
-P 14450 3350
-F 0 "#PWR?" H 14450 3200 50  0001 C CNN
-F 1 "VBUS" H 14465 3523 50  0000 C CNN
-F 2 "" H 14450 3350 50  0001 C CNN
-F 3 "" H 14450 3350 50  0001 C CNN
-	1    14450 3350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14450 3350 14450 3550
 NoConn ~ 14250 3750
 NoConn ~ 14250 3850
 $Comp
@@ -1017,4 +991,57 @@ Wire Wire Line
 Connection ~ 13650 5150
 Wire Wire Line
 	13650 5150 13650 5250
+$Comp
+L ambient_light-cad-rescue:USB_C_Plug_USB2.0-Connector P?
+U 1 1 5F7DF33C
+P 13650 4150
+F 0 "P?" H 13757 5017 50  0000 C CNN
+F 1 "USB_C_Plug_USB2.0" H 13757 4926 50  0000 C CNN
+F 2 "" H 13800 4150 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 13800 4150 50  0001 C CNN
+	1    13650 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FD2D73E
+P 14850 4050
+F 0 "#PWR?" H 14850 3800 50  0001 C CNN
+F 1 "GND" H 14855 3877 50  0000 C CNN
+F 2 "" H 14850 4050 50  0001 C CNN
+F 3 "" H 14850 4050 50  0001 C CNN
+	1    14850 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14850 3350 14850 3550
+$Comp
+L power:VBUS #PWR?
+U 1 1 5FCFCE9E
+P 14850 3350
+F 0 "#PWR?" H 14850 3200 50  0001 C CNN
+F 1 "VBUS" H 14865 3523 50  0000 C CNN
+F 2 "" H 14850 3350 50  0001 C CNN
+F 3 "" H 14850 3350 50  0001 C CNN
+	1    14850 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14850 3550 14850 3700
+Connection ~ 14850 3550
+Wire Wire Line
+	14250 3550 14850 3550
+Wire Wire Line
+	14850 3900 14850 4050
+$Comp
+L Device:CP1_Small C?
+U 1 1 5FD787DC
+P 14850 3800
+F 0 "C?" H 14941 3846 50  0000 L CNN
+F 1 "4.7μF" H 14941 3755 50  0000 L CNN
+F 2 "" H 14850 3800 50  0001 C CNN
+F 3 "~" H 14850 3800 50  0001 C CNN
+	1    14850 3800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
