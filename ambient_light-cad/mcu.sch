@@ -197,12 +197,12 @@ D+
 Text Label 2500 2650 0    50   ~ 0
 D-
 Wire Wire Line
-	9100 4500 9300 4500
+	9250 4550 9300 4550
 Wire Wire Line
-	9100 4700 9300 4700
-Text Label 9300 4500 0    50   ~ 0
+	9250 4750 9300 4750
+Text Label 9450 4550 0    50   ~ 0
 D-
-Text Label 9300 4700 0    50   ~ 0
+Text Label 9450 4750 0    50   ~ 0
 D+
 Wire Wire Line
 	2200 1750 2200 1850
@@ -1083,89 +1083,103 @@ F 3 "~" H 5550 3100 50  0001 C CNN
 	1    5550 3100
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 9100 4200
-NoConn ~ 9100 4300
 $Comp
 L power:GND #PWR?
 U 1 1 5FD4C1A5
-P 8500 5700
+P 8650 5750
 AR Path="/5FD4C1A5" Ref="#PWR?"  Part="1" 
 AR Path="/5FD145BE/5FD4C1A5" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8500 5450 50  0001 C CNN
-F 1 "GND" H 8505 5527 50  0000 C CNN
-F 2 "" H 8500 5700 50  0001 C CNN
-F 3 "" H 8500 5700 50  0001 C CNN
-	1    8500 5700
+F 0 "#PWR?" H 8650 5500 50  0001 C CNN
+F 1 "GND" H 8655 5577 50  0000 C CNN
+F 2 "" H 8650 5750 50  0001 C CNN
+F 3 "" H 8650 5750 50  0001 C CNN
+	1    8650 5750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8500 5500 8500 5600
+	8650 5550 8650 5650
 Wire Wire Line
-	8200 5500 8200 5600
+	8350 5550 8350 5650
 Wire Wire Line
-	8200 5600 8500 5600
-Connection ~ 8500 5600
+	8350 5650 8650 5650
+Connection ~ 8650 5650
 Wire Wire Line
-	8500 5600 8500 5700
-$Comp
-L ambient_light-cad-rescue:USB_C_Plug_USB2.0-Connector P?
-U 1 1 5FD4C1B0
-P 8500 4600
-AR Path="/5FD4C1B0" Ref="P?"  Part="1" 
-AR Path="/5FD145BE/5FD4C1B0" Ref="P?"  Part="1" 
-F 0 "P?" H 8607 5467 50  0000 C CNN
-F 1 "USB_C_Plug_USB2.0" H 8607 5376 50  0000 C CNN
-F 2 "" H 8650 4600 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 8650 4600 50  0001 C CNN
-	1    8500 4600
-	1    0    0    -1  
-$EndComp
+	8650 5650 8650 5750
 $Comp
 L power:GND #PWR?
 U 1 1 5FD4C1B6
-P 9700 4500
+P 9850 4550
 AR Path="/5FD4C1B6" Ref="#PWR?"  Part="1" 
 AR Path="/5FD145BE/5FD4C1B6" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 9700 4250 50  0001 C CNN
-F 1 "GND" H 9705 4327 50  0000 C CNN
-F 2 "" H 9700 4500 50  0001 C CNN
-F 3 "" H 9700 4500 50  0001 C CNN
-	1    9700 4500
+F 0 "#PWR?" H 9850 4300 50  0001 C CNN
+F 1 "GND" H 9855 4377 50  0000 C CNN
+F 2 "" H 9850 4550 50  0001 C CNN
+F 3 "" H 9850 4550 50  0001 C CNN
+	1    9850 4550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9700 3800 9700 4000
+	9850 3850 9850 4050
 $Comp
 L power:VBUS #PWR?
 U 1 1 5FD4C1BD
-P 9700 3800
+P 9850 3850
 AR Path="/5FD4C1BD" Ref="#PWR?"  Part="1" 
 AR Path="/5FD145BE/5FD4C1BD" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 9700 3650 50  0001 C CNN
-F 1 "VBUS" H 9715 3973 50  0000 C CNN
-F 2 "" H 9700 3800 50  0001 C CNN
-F 3 "" H 9700 3800 50  0001 C CNN
-	1    9700 3800
+F 0 "#PWR?" H 9850 3700 50  0001 C CNN
+F 1 "VBUS" H 9865 4023 50  0000 C CNN
+F 2 "" H 9850 3850 50  0001 C CNN
+F 3 "" H 9850 3850 50  0001 C CNN
+	1    9850 3850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9700 4000 9700 4150
-Connection ~ 9700 4000
+	9850 4050 9850 4200
+Connection ~ 9850 4050
 Wire Wire Line
-	9100 4000 9700 4000
+	9250 4050 9850 4050
 Wire Wire Line
-	9700 4350 9700 4500
+	9850 4400 9850 4550
 $Comp
 L Device:CP1_Small C?
 U 1 1 5FD4C1C7
-P 9700 4250
+P 9850 4300
 AR Path="/5FD4C1C7" Ref="C?"  Part="1" 
 AR Path="/5FD145BE/5FD4C1C7" Ref="C?"  Part="1" 
-F 0 "C?" H 9791 4296 50  0000 L CNN
-F 1 "4.7μF" H 9791 4205 50  0000 L CNN
-F 2 "" H 9700 4250 50  0001 C CNN
-F 3 "~" H 9700 4250 50  0001 C CNN
-	1    9700 4250
+F 0 "C?" H 9941 4346 50  0000 L CNN
+F 1 "4.7μF" H 9941 4255 50  0000 L CNN
+F 2 "" H 9850 4300 50  0001 C CNN
+F 3 "~" H 9850 4300 50  0001 C CNN
+	1    9850 4300
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J?
+U 1 1 5FDCB391
+P 8650 4650
+F 0 "J?" H 8757 5517 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 8757 5426 50  0000 C CNN
+F 2 "" H 8800 4650 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 8800 4650 50  0001 C CNN
+	1    8650 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 4650 9300 4650
+Wire Wire Line
+	9300 4650 9300 4550
+Connection ~ 9300 4550
+Wire Wire Line
+	9300 4550 9450 4550
+Wire Wire Line
+	9250 4850 9300 4850
+Wire Wire Line
+	9300 4850 9300 4750
+Connection ~ 9300 4750
+Wire Wire Line
+	9300 4750 9450 4750
+NoConn ~ 9250 5250
+NoConn ~ 9250 5150
+NoConn ~ 9250 4350
+NoConn ~ 9250 4250
 $EndSCHEMATC
