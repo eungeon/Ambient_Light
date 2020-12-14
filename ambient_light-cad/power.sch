@@ -101,7 +101,7 @@ $EndComp
 Wire Wire Line
 	3550 2650 3550 2550
 $Comp
-L Device:R_Small R?
+L Device:R_Small_US R?
 U 1 1 5FDC2ECB
 P 4050 2450
 F 0 "R?" H 4109 2496 50  0000 L CNN
@@ -172,7 +172,7 @@ Wire Wire Line
 	6600 2650 6600 2550
 Connection ~ 6600 1950
 $Comp
-L Device:R_Small R?
+L Device:R_Small_US R?
 U 1 1 5FDC2EF2
 P 6150 2450
 F 0 "R?" H 6209 2496 50  0000 L CNN
@@ -196,7 +196,7 @@ $EndComp
 Wire Wire Line
 	6150 2650 6150 2550
 $Comp
-L Device:R_Small R?
+L Device:R_Small_US R?
 U 1 1 5FDC2EFF
 P 6150 2100
 F 0 "R?" H 6209 2146 50  0000 L CNN
@@ -569,29 +569,25 @@ $EndComp
 $Comp
 L Device:R_Small_US R?
 U 1 1 5FFA0592
-P 2600 3900
-F 0 "R?" H 2668 3946 50  0000 L CNN
-F 1 "10k" H 2668 3855 50  0000 L CNN
-F 2 "" H 2600 3900 50  0001 C CNN
-F 3 "~" H 2600 3900 50  0001 C CNN
-	1    2600 3900
+P 2600 3850
+F 0 "R?" H 2668 3896 50  0000 L CNN
+F 1 "10k" H 2668 3805 50  0000 L CNN
+F 2 "" H 2600 3850 50  0001 C CNN
+F 3 "~" H 2600 3850 50  0001 C CNN
+	1    2600 3850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small_US R?
 U 1 1 5FFA1CD1
-P 2600 4300
-F 0 "R?" H 2668 4346 50  0000 L CNN
-F 1 "10k" H 2668 4255 50  0000 L CNN
-F 2 "" H 2600 4300 50  0001 C CNN
-F 3 "~" H 2600 4300 50  0001 C CNN
-	1    2600 4300
+P 2600 4350
+F 0 "R?" H 2668 4396 50  0000 L CNN
+F 1 "10k" H 2668 4305 50  0000 L CNN
+F 2 "" H 2600 4350 50  0001 C CNN
+F 3 "~" H 2600 4350 50  0001 C CNN
+	1    2600 4350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2600 3800 2600 3600
-Wire Wire Line
-	2600 4600 2600 4400
 Wire Wire Line
 	4200 4350 4300 4350
 $Comp
@@ -610,16 +606,11 @@ Wire Wire Line
 Wire Wire Line
 	3050 4450 3600 4450
 Wire Wire Line
-	2600 4000 2600 4100
-Wire Wire Line
 	2600 4100 3300 4100
 Wire Wire Line
 	3300 4100 3300 4250
 Wire Wire Line
 	3300 4250 3600 4250
-Connection ~ 2600 4100
-Wire Wire Line
-	2600 4100 2600 4200
 $Comp
 L power:+5V #PWR?
 U 1 1 5FFBC4EE
@@ -705,4 +696,13 @@ Wire Wire Line
 	2050 3600 2050 3800
 Wire Wire Line
 	2050 4400 2050 4600
+Wire Wire Line
+	2600 3950 2600 4100
+Connection ~ 2600 4100
+Wire Wire Line
+	2600 4100 2600 4250
+Wire Wire Line
+	2600 3750 2600 3600
+Wire Wire Line
+	2600 4450 2600 4600
 $EndSCHEMATC
