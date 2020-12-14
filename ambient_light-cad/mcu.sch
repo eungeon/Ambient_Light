@@ -192,18 +192,6 @@ Wire Wire Line
 	2700 2550 2500 2550
 Wire Wire Line
 	2700 2650 2500 2650
-Text Label 2500 2550 0    50   ~ 0
-D+
-Text Label 2500 2650 0    50   ~ 0
-D-
-Wire Wire Line
-	7550 4850 7600 4850
-Wire Wire Line
-	7550 5050 7600 5050
-Text Label 7750 4850 0    50   ~ 0
-D-
-Text Label 7750 5050 0    50   ~ 0
-D+
 Wire Wire Line
 	2200 1750 2200 1850
 Connection ~ 2200 1850
@@ -224,10 +212,6 @@ F 3 "" H 2200 2350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5100 6000 5350 6000
-Text Label 5350 6000 0    50   ~ 0
-Reset
-Text Label 4100 2950 0    50   ~ 0
-Reset
 Wire Wire Line
 	3100 3250 3100 3300
 $Comp
@@ -311,92 +295,25 @@ Text Label 5350 6200 0    50   ~ 0
 TX
 Text Label 5350 6300 0    50   ~ 0
 RX
-$Comp
-L Connector_Generic:Conn_02x03_Odd_Even J?
-U 1 1 5FD4C036
-P 9950 2700
-AR Path="/5FD4C036" Ref="J?"  Part="1" 
-AR Path="/5FD145BE/5FD4C036" Ref="J?"  Part="1" 
-F 0 "J?" H 10000 3017 50  0000 C CNN
-F 1 "ICSP" H 10000 2926 50  0000 C CNN
-F 2 "" H 9950 2700 50  0001 C CNN
-F 3 "~" H 9950 2700 50  0001 C CNN
-	1    9950 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10250 2600 10400 2600
-Wire Wire Line
-	10250 2700 10400 2700
-Wire Wire Line
-	10250 2800 10400 2800
-Text Label 10400 2700 0    50   ~ 0
-MOSI
-Wire Wire Line
-	10400 2600 10400 2450
-Wire Wire Line
-	10400 2800 10400 2950
-$Comp
-L power:+5V #PWR?
-U 1 1 5FD4C042
-P 10400 2450
-AR Path="/5FD4C042" Ref="#PWR?"  Part="1" 
-AR Path="/5FD145BE/5FD4C042" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10400 2300 50  0001 C CNN
-F 1 "+5V" H 10415 2623 50  0000 C CNN
-F 2 "" H 10400 2450 50  0001 C CNN
-F 3 "" H 10400 2450 50  0001 C CNN
-	1    10400 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FD4C048
-P 10400 2950
-AR Path="/5FD4C048" Ref="#PWR?"  Part="1" 
-AR Path="/5FD145BE/5FD4C048" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10400 2700 50  0001 C CNN
-F 1 "GND" H 10405 2777 50  0000 C CNN
-F 2 "" H 10400 2950 50  0001 C CNN
-F 3 "" H 10400 2950 50  0001 C CNN
-	1    10400 2950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5100 4900 5350 4900
 Wire Wire Line
 	5100 4800 5350 4800
-Text Label 5350 4800 0    50   ~ 0
-MOSI
-Text Label 5350 4900 0    50   ~ 0
-MISO
-Text Label 5350 5000 0    50   ~ 0
-SCK
 $Comp
 L power:GND #PWR?
 U 1 1 5FD4C053
-P 6000 5950
+P 5900 5950
 AR Path="/5FD4C053" Ref="#PWR?"  Part="1" 
 AR Path="/5FD145BE/5FD4C053" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6000 5700 50  0001 C CNN
-F 1 "GND" H 6005 5777 50  0000 C CNN
-F 2 "" H 6000 5950 50  0001 C CNN
-F 3 "" H 6000 5950 50  0001 C CNN
-	1    6000 5950
+F 0 "#PWR?" H 5900 5700 50  0001 C CNN
+F 1 "GND" H 5905 5777 50  0000 C CNN
+F 2 "" H 5900 5950 50  0001 C CNN
+F 3 "" H 5900 5950 50  0001 C CNN
+	1    5900 5950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 5000 6000 5000
-Text Label 9500 2600 0    50   ~ 0
-MISO
-Text Label 9500 2700 0    50   ~ 0
-SCK
-Wire Wire Line
-	9500 2700 9750 2700
-Wire Wire Line
-	9500 2800 9750 2800
-Wire Wire Line
-	9500 2600 9750 2600
+	5100 5000 5900 5000
 Wire Wire Line
 	3900 4500 2850 4500
 $Comp
@@ -412,8 +329,6 @@ F 3 "" H 2850 5250 50  0001 C CNN
 	1    2850 5250
 	1    0    0    -1  
 $EndComp
-Text Label 9500 2800 0    50   ~ 0
-Reset
 $Comp
 L Device:C_Small C?
 U 1 1 5FD4C067
@@ -520,35 +435,35 @@ Wire Wire Line
 $Comp
 L Device:R_Small R?
 U 1 1 5FD4C097
-P 6000 5250
+P 5900 5250
 AR Path="/5FD4C097" Ref="R?"  Part="1" 
 AR Path="/5FD145BE/5FD4C097" Ref="R?"  Part="1" 
-F 0 "R?" H 6059 5296 50  0000 L CNN
-F 1 "1k" H 6059 5205 50  0000 L CNN
-F 2 "" H 6000 5250 50  0001 C CNN
-F 3 "~" H 6000 5250 50  0001 C CNN
-	1    6000 5250
+F 0 "R?" H 5959 5296 50  0000 L CNN
+F 1 "1k" H 5959 5205 50  0000 L CNN
+F 2 "" H 5900 5250 50  0001 C CNN
+F 3 "~" H 5900 5250 50  0001 C CNN
+	1    5900 5250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6000 5000 6000 5150
+	5900 5000 5900 5150
 $Comp
 L Device:LED_Small D?
 U 1 1 5FD4C09E
-P 6000 5650
+P 5900 5650
 AR Path="/5FD4C09E" Ref="D?"  Part="1" 
 AR Path="/5FD145BE/5FD4C09E" Ref="D?"  Part="1" 
-F 0 "D?" V 6046 5580 50  0000 R CNN
-F 1 "Yellow" V 5955 5580 50  0000 R CNN
-F 2 "" V 6000 5650 50  0001 C CNN
-F 3 "~" V 6000 5650 50  0001 C CNN
-	1    6000 5650
+F 0 "D?" V 5946 5580 50  0000 R CNN
+F 1 "Yellow" V 5855 5580 50  0000 R CNN
+F 2 "" V 5900 5650 50  0001 C CNN
+F 3 "~" V 5900 5650 50  0001 C CNN
+	1    5900 5650
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6000 5350 6000 5550
+	5900 5350 5900 5550
 Wire Wire Line
-	6000 5750 6000 5950
+	5900 5750 5900 5950
 $Comp
 L Device:LED_Small D?
 U 1 1 5FD4C0A6
@@ -735,8 +650,6 @@ Wire Wire Line
 	1450 4800 1450 4850
 Wire Wire Line
 	1300 5000 1650 5000
-Text Label 1650 5000 0    50   ~ 0
-Reset
 $Comp
 L Device:LED_Small D?
 U 1 1 5FD4C0FF
@@ -801,391 +714,37 @@ Wire Wire Line
 Wire Wire Line
 	1300 5150 1300 5000
 Connection ~ 1300 5000
-$Comp
-L Connector:Conn_01x03_Female J?
-U 1 1 5FD4C11F
-P 6700 2000
-AR Path="/5FD4C11F" Ref="J?"  Part="1" 
-AR Path="/5FD145BE/5FD4C11F" Ref="J?"  Part="1" 
-F 0 "J?" H 6728 2026 50  0000 L CNN
-F 1 "LED_Strip_conn_1" H 6728 1935 50  0000 L CNN
-F 2 "" H 6700 2000 50  0001 C CNN
-F 3 "~" H 6700 2000 50  0001 C CNN
-	1    6700 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5FD4C125
-P 6300 1800
-AR Path="/5FD4C125" Ref="#PWR?"  Part="1" 
-AR Path="/5FD145BE/5FD4C125" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6300 1650 50  0001 C CNN
-F 1 "VCC" H 6315 1973 50  0000 C CNN
-F 2 "" H 6300 1800 50  0001 C CNN
-F 3 "" H 6300 1800 50  0001 C CNN
-	1    6300 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FD4C12B
-P 6300 2200
-AR Path="/5FD4C12B" Ref="#PWR?"  Part="1" 
-AR Path="/5FD145BE/5FD4C12B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6300 1950 50  0001 C CNN
-F 1 "GND" H 6305 2027 50  0000 C CNN
-F 2 "" H 6300 2200 50  0001 C CNN
-F 3 "" H 6300 2200 50  0001 C CNN
-	1    6300 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6300 1900 6500 1900
-Wire Wire Line
-	6300 1800 6300 1900
-Wire Wire Line
-	6300 2200 6300 2100
-Wire Wire Line
-	6300 2100 6500 2100
-Wire Wire Line
-	5100 6800 5350 6800
-Text Label 5350 6800 0    50   ~ 0
-D6
-Text Label 6300 2000 2    50   ~ 0
-D6
-Wire Wire Line
-	6300 2000 6500 2000
-Wire Wire Line
-	5100 6900 5350 6900
-Text Label 5350 6900 0    50   ~ 0
-D7
-$Comp
-L Connector:Conn_01x03_Female J?
-U 1 1 5FD4C13B
-P 6700 3100
-AR Path="/5FD4C13B" Ref="J?"  Part="1" 
-AR Path="/5FD145BE/5FD4C13B" Ref="J?"  Part="1" 
-F 0 "J?" H 6728 3126 50  0000 L CNN
-F 1 "LED_Strip_conn_2" H 6728 3035 50  0000 L CNN
-F 2 "" H 6700 3100 50  0001 C CNN
-F 3 "~" H 6700 3100 50  0001 C CNN
-	1    6700 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5FD4C141
-P 6300 2900
-AR Path="/5FD4C141" Ref="#PWR?"  Part="1" 
-AR Path="/5FD145BE/5FD4C141" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6300 2750 50  0001 C CNN
-F 1 "VCC" H 6315 3073 50  0000 C CNN
-F 2 "" H 6300 2900 50  0001 C CNN
-F 3 "" H 6300 2900 50  0001 C CNN
-	1    6300 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FD4C147
-P 6300 3300
-AR Path="/5FD4C147" Ref="#PWR?"  Part="1" 
-AR Path="/5FD145BE/5FD4C147" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6300 3050 50  0001 C CNN
-F 1 "GND" H 6305 3127 50  0000 C CNN
-F 2 "" H 6300 3300 50  0001 C CNN
-F 3 "" H 6300 3300 50  0001 C CNN
-	1    6300 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6300 3000 6500 3000
-Wire Wire Line
-	6300 2900 6300 3000
-Wire Wire Line
-	6300 3300 6300 3200
-Wire Wire Line
-	6300 3200 6500 3200
-Text Label 6300 3100 2    50   ~ 0
-D7
-Wire Wire Line
-	6300 3100 6500 3100
-$Comp
-L power:VCC #PWR?
-U 1 1 5FD4C153
-P 5750 1800
-AR Path="/5FD4C153" Ref="#PWR?"  Part="1" 
-AR Path="/5FD145BE/5FD4C153" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5750 1650 50  0001 C CNN
-F 1 "VCC" H 5765 1973 50  0000 C CNN
-F 2 "" H 5750 1800 50  0001 C CNN
-F 3 "" H 5750 1800 50  0001 C CNN
-	1    5750 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5750 1800 5750 1900
-$Comp
-L power:GND #PWR?
-U 1 1 5FD4C15A
-P 5750 2200
-AR Path="/5FD4C15A" Ref="#PWR?"  Part="1" 
-AR Path="/5FD145BE/5FD4C15A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5750 1950 50  0001 C CNN
-F 1 "GND" H 5755 2027 50  0000 C CNN
-F 2 "" H 5750 2200 50  0001 C CNN
-F 3 "" H 5750 2200 50  0001 C CNN
-	1    5750 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5750 2200 5750 2100
-$Comp
-L Device:CP1_Small C?
-U 1 1 5FD4C161
-P 5750 2000
-AR Path="/5FD4C161" Ref="C?"  Part="1" 
-AR Path="/5FD145BE/5FD4C161" Ref="C?"  Part="1" 
-F 0 "C?" H 5841 2046 50  0000 L CNN
-F 1 "220μF" H 5841 1955 50  0000 L CNN
-F 2 "" H 5750 2000 50  0001 C CNN
-F 3 "~" H 5750 2000 50  0001 C CNN
-	1    5750 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5FD4C167
-P 5550 1800
-AR Path="/5FD4C167" Ref="#PWR?"  Part="1" 
-AR Path="/5FD145BE/5FD4C167" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5550 1650 50  0001 C CNN
-F 1 "VCC" H 5565 1973 50  0000 C CNN
-F 2 "" H 5550 1800 50  0001 C CNN
-F 3 "" H 5550 1800 50  0001 C CNN
-	1    5550 1800
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 1800 5550 1900
-$Comp
-L power:GND #PWR?
-U 1 1 5FD4C16E
-P 5550 2200
-AR Path="/5FD4C16E" Ref="#PWR?"  Part="1" 
-AR Path="/5FD145BE/5FD4C16E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5550 1950 50  0001 C CNN
-F 1 "GND" H 5555 2027 50  0000 C CNN
-F 2 "" H 5550 2200 50  0001 C CNN
-F 3 "" H 5550 2200 50  0001 C CNN
-	1    5550 2200
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 2200 5550 2100
-$Comp
-L Device:CP1_Small C?
-U 1 1 5FD4C175
-P 5550 2000
-AR Path="/5FD4C175" Ref="C?"  Part="1" 
-AR Path="/5FD145BE/5FD4C175" Ref="C?"  Part="1" 
-F 0 "C?" H 5641 2046 50  0000 L CNN
-F 1 "220μF" H 5641 1955 50  0000 L CNN
-F 2 "" H 5550 2000 50  0001 C CNN
-F 3 "~" H 5550 2000 50  0001 C CNN
-	1    5550 2000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5FD4C17B
-P 5750 2900
-AR Path="/5FD4C17B" Ref="#PWR?"  Part="1" 
-AR Path="/5FD145BE/5FD4C17B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5750 2750 50  0001 C CNN
-F 1 "VCC" H 5765 3073 50  0000 C CNN
-F 2 "" H 5750 2900 50  0001 C CNN
-F 3 "" H 5750 2900 50  0001 C CNN
-	1    5750 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5750 2900 5750 3000
-$Comp
-L power:GND #PWR?
-U 1 1 5FD4C182
-P 5750 3300
-AR Path="/5FD4C182" Ref="#PWR?"  Part="1" 
-AR Path="/5FD145BE/5FD4C182" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5750 3050 50  0001 C CNN
-F 1 "GND" H 5755 3127 50  0000 C CNN
-F 2 "" H 5750 3300 50  0001 C CNN
-F 3 "" H 5750 3300 50  0001 C CNN
-	1    5750 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5750 3300 5750 3200
-$Comp
-L Device:CP1_Small C?
-U 1 1 5FD4C189
-P 5750 3100
-AR Path="/5FD4C189" Ref="C?"  Part="1" 
-AR Path="/5FD145BE/5FD4C189" Ref="C?"  Part="1" 
-F 0 "C?" H 5841 3146 50  0000 L CNN
-F 1 "220μF" H 5841 3055 50  0000 L CNN
-F 2 "" H 5750 3100 50  0001 C CNN
-F 3 "~" H 5750 3100 50  0001 C CNN
-	1    5750 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5FD4C18F
-P 5550 2900
-AR Path="/5FD4C18F" Ref="#PWR?"  Part="1" 
-AR Path="/5FD145BE/5FD4C18F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5550 2750 50  0001 C CNN
-F 1 "VCC" H 5565 3073 50  0000 C CNN
-F 2 "" H 5550 2900 50  0001 C CNN
-F 3 "" H 5550 2900 50  0001 C CNN
-	1    5550 2900
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 2900 5550 3000
-$Comp
-L power:GND #PWR?
-U 1 1 5FD4C196
-P 5550 3300
-AR Path="/5FD4C196" Ref="#PWR?"  Part="1" 
-AR Path="/5FD145BE/5FD4C196" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5550 3050 50  0001 C CNN
-F 1 "GND" H 5555 3127 50  0000 C CNN
-F 2 "" H 5550 3300 50  0001 C CNN
-F 3 "" H 5550 3300 50  0001 C CNN
-	1    5550 3300
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 3300 5550 3200
-$Comp
-L Device:CP1_Small C?
-U 1 1 5FD4C19D
-P 5550 3100
-AR Path="/5FD4C19D" Ref="C?"  Part="1" 
-AR Path="/5FD145BE/5FD4C19D" Ref="C?"  Part="1" 
-F 0 "C?" H 5641 3146 50  0000 L CNN
-F 1 "220μF" H 5641 3055 50  0000 L CNN
-F 2 "" H 5550 3100 50  0001 C CNN
-F 3 "~" H 5550 3100 50  0001 C CNN
-	1    5550 3100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FD4C1A5
-P 6950 6050
-AR Path="/5FD4C1A5" Ref="#PWR?"  Part="1" 
-AR Path="/5FD145BE/5FD4C1A5" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6950 5800 50  0001 C CNN
-F 1 "GND" H 6955 5877 50  0000 C CNN
-F 2 "" H 6950 6050 50  0001 C CNN
-F 3 "" H 6950 6050 50  0001 C CNN
-	1    6950 6050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6950 5850 6950 5950
-Wire Wire Line
-	6650 5850 6650 5950
-Wire Wire Line
-	6650 5950 6950 5950
-Connection ~ 6950 5950
-Wire Wire Line
-	6950 5950 6950 6050
-$Comp
-L power:GND #PWR?
-U 1 1 5FD4C1B6
-P 8150 4850
-AR Path="/5FD4C1B6" Ref="#PWR?"  Part="1" 
-AR Path="/5FD145BE/5FD4C1B6" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8150 4600 50  0001 C CNN
-F 1 "GND" H 8155 4677 50  0000 C CNN
-F 2 "" H 8150 4850 50  0001 C CNN
-F 3 "" H 8150 4850 50  0001 C CNN
-	1    8150 4850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8150 4150 8150 4350
-$Comp
-L power:VBUS #PWR?
-U 1 1 5FD4C1BD
-P 8150 4150
-AR Path="/5FD4C1BD" Ref="#PWR?"  Part="1" 
-AR Path="/5FD145BE/5FD4C1BD" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8150 4000 50  0001 C CNN
-F 1 "VBUS" H 8165 4323 50  0000 C CNN
-F 2 "" H 8150 4150 50  0001 C CNN
-F 3 "" H 8150 4150 50  0001 C CNN
-	1    8150 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8150 4350 8150 4500
-Connection ~ 8150 4350
-Wire Wire Line
-	7550 4350 8150 4350
-Wire Wire Line
-	8150 4700 8150 4850
-$Comp
-L Device:CP1_Small C?
-U 1 1 5FD4C1C7
-P 8150 4600
-AR Path="/5FD4C1C7" Ref="C?"  Part="1" 
-AR Path="/5FD145BE/5FD4C1C7" Ref="C?"  Part="1" 
-F 0 "C?" H 8241 4646 50  0000 L CNN
-F 1 "4.7μF" H 8241 4555 50  0000 L CNN
-F 2 "" H 8150 4600 50  0001 C CNN
-F 3 "~" H 8150 4600 50  0001 C CNN
-	1    8150 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:USB_C_Receptacle_USB2.0 J?
-U 1 1 5FDCB391
-P 6950 4950
-F 0 "J?" H 7057 5817 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 7057 5726 50  0000 C CNN
-F 2 "" H 7100 4950 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 7100 4950 50  0001 C CNN
-	1    6950 4950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7550 4950 7600 4950
-Wire Wire Line
-	7600 4950 7600 4850
-Connection ~ 7600 4850
-Wire Wire Line
-	7600 4850 7750 4850
-Wire Wire Line
-	7550 5150 7600 5150
-Wire Wire Line
-	7600 5150 7600 5050
-Connection ~ 7600 5050
-Wire Wire Line
-	7600 5050 7750 5050
-NoConn ~ 7550 5550
-NoConn ~ 7550 5450
-NoConn ~ 7550 4650
-NoConn ~ 7550 4550
 $Sheet
 S 8800 4450 1950 1150
 U 5FD7B477
 F0 "interface" 50
 F1 "interface.sch" 50
 $EndSheet
+Text GLabel 2500 2650 0    50   Input ~ 0
+D-
+Text GLabel 2500 2550 0    50   Input ~ 0
+D+
+Text GLabel 5350 6800 2    50   Input ~ 0
+D6
+Wire Wire Line
+	5100 6800 5350 6800
+Wire Wire Line
+	5100 6900 5350 6900
+Text GLabel 5350 6900 2    50   Input ~ 0
+D7
+Text GLabel 5350 4900 2    50   Input ~ 0
+MISO
+Text GLabel 6150 5000 2    50   Input ~ 0
+SCK
+Text GLabel 1650 5000 2    50   Input ~ 0
+Reset
+Text GLabel 5350 4800 2    50   Input ~ 0
+MOSI
+Text GLabel 5350 6000 2    50   Input ~ 0
+Reset
+Text GLabel 4100 2950 2    50   Input ~ 0
+Reset
+Connection ~ 5900 5000
+Wire Wire Line
+	5900 5000 6150 5000
 $EndSCHEMATC
