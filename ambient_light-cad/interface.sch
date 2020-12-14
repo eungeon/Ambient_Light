@@ -443,20 +443,6 @@ Wire Wire Line
 Wire Wire Line
 	7750 1750 7750 1900
 $Comp
-L power:+5V #PWR?
-U 1 1 5FDA9512
-P 7750 1400
-AR Path="/5FDA9512" Ref="#PWR?"  Part="1" 
-AR Path="/5FD145BE/5FDA9512" Ref="#PWR?"  Part="1" 
-AR Path="/5FD145BE/5FD7B477/5FDA9512" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7750 1250 50  0001 C CNN
-F 1 "+5V" H 7765 1573 50  0000 C CNN
-F 2 "" H 7750 1400 50  0001 C CNN
-F 3 "" H 7750 1400 50  0001 C CNN
-	1    7750 1400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5FDA9518
 P 7750 1900
@@ -484,4 +470,18 @@ Text GLabel 6850 1650 0    50   Input ~ 0
 SCK
 Text GLabel 6850 1750 0    50   Input ~ 0
 Reset
+$Comp
+L power:VCC #PWR?
+U 1 1 5FE47264
+P 7750 1400
+AR Path="/5FE47264" Ref="#PWR?"  Part="1" 
+AR Path="/5FD145BE/5FE47264" Ref="#PWR?"  Part="1" 
+AR Path="/5FD145BE/5FD7B477/5FE47264" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7750 1250 50  0001 C CNN
+F 1 "VCC" H 7765 1573 50  0000 C CNN
+F 2 "" H 7750 1400 50  0001 C CNN
+F 3 "" H 7750 1400 50  0001 C CNN
+	1    7750 1400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
