@@ -59,45 +59,45 @@ XTAL2
 $Comp
 L power:GND #PWR?
 U 1 1 5FD4BFB2
-P 7700 4250
+P 1950 7150
 AR Path="/5FD4BFB2" Ref="#PWR?"  Part="1" 
 AR Path="/5FD145BE/5FD4BFB2" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7700 4000 50  0001 C CNN
-F 1 "GND" H 7705 4077 50  0000 C CNN
-F 2 "" H 7700 4250 50  0001 C CNN
-F 3 "" H 7700 4250 50  0001 C CNN
-	1    7700 4250
+F 0 "#PWR?" H 1950 6900 50  0001 C CNN
+F 1 "GND" H 1955 6977 50  0000 C CNN
+F 2 "" H 1950 7150 50  0001 C CNN
+F 3 "" H 1950 7150 50  0001 C CNN
+	1    1950 7150
 	1    0    0    -1  
 $EndComp
-Text Label 6700 3300 0    50   ~ 0
+Text Label 950  6200 0    50   ~ 0
 XTAL1
-Text Label 6700 3400 0    50   ~ 0
+Text Label 950  6300 0    50   ~ 0
 XTAL2
 Wire Wire Line
-	7300 2900 7700 2900
+	1550 5800 1950 5800
 Wire Wire Line
-	7300 3300 6700 3300
+	1550 6200 950  6200
 Wire Wire Line
-	7700 2900 7700 3400
+	1950 5800 1950 6300
 Wire Wire Line
-	7700 3400 6700 3400
-Connection ~ 7300 3300
-Connection ~ 7700 3400
+	1950 6300 950  6300
+Connection ~ 1550 6200
+Connection ~ 1950 6300
 Wire Wire Line
-	7100 3100 7100 4050
+	1350 6000 1350 6950
 Wire Wire Line
-	7100 4050 7300 4050
-Connection ~ 7300 4050
+	1350 6950 1550 6950
+Connection ~ 1550 6950
 Wire Wire Line
-	7300 4050 7500 4050
+	1550 6950 1750 6950
 Wire Wire Line
-	7500 3100 7500 4050
-Connection ~ 7500 4050
+	1750 6000 1750 6950
+Connection ~ 1750 6950
 Wire Wire Line
-	7500 4050 7700 4050
+	1750 6950 1950 6950
 Wire Wire Line
-	7700 4050 7700 4250
-Connection ~ 7700 4050
+	1950 6950 1950 7150
+Connection ~ 1950 6950
 $Comp
 L Interface_USB:CH340G U?
 U 1 1 5FD4BFC9
@@ -282,7 +282,7 @@ F 3 "~" H 2850 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small_US R?
 U 1 1 5FD4C06D
 P 3900 2000
 AR Path="/5FD4C06D" Ref="R?"  Part="1" 
@@ -297,14 +297,14 @@ $EndComp
 $Comp
 L Device:Crystal_GND24_Small Y?
 U 1 1 5FD4C073
-P 7300 3100
+P 1550 6000
 AR Path="/5FD4C073" Ref="Y?"  Part="1" 
 AR Path="/5FD145BE/5FD4C073" Ref="Y?"  Part="1" 
-F 0 "Y?" V 7100 2600 50  0000 L CNN
-F 1 "14.4756MHz" V 7200 2600 50  0000 L CNN
-F 2 "" H 7300 3100 50  0001 C CNN
-F 3 "~" H 7300 3100 50  0001 C CNN
-	1    7300 3100
+F 0 "Y?" V 1350 5500 50  0000 L CNN
+F 1 "14.4756MHz" V 1450 5500 50  0000 L CNN
+F 2 "" H 1550 6000 50  0001 C CNN
+F 3 "~" H 1550 6000 50  0001 C CNN
+	1    1550 6000
 	0    1    1    0   
 $EndComp
 $Comp
@@ -320,19 +320,6 @@ F 3 "~" V 4150 1650 50  0001 C CNN
 	1    4150 1650
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5FD4C07F
-P 3900 2100
-AR Path="/5FD4C07F" Ref="R?"  Part="1" 
-AR Path="/5FD145BE/5FD4C07F" Ref="R?"  Part="1" 
-F 0 "R?" V 4000 2050 50  0000 C CNN
-F 1 "1k" V 4000 2150 50  0000 C CNN
-F 2 "" H 3900 2100 50  0001 C CNN
-F 3 "~" H 3900 2100 50  0001 C CNN
-	1    3900 2100
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3500 2000 3800 2000
 Wire Wire Line
@@ -342,7 +329,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 2000 4150 2000
 $Comp
-L Device:R_Small R?
+L Device:R_Small_US R?
 U 1 1 5FD4C089
 P 4300 1300
 AR Path="/5FD4C089" Ref="R?"  Part="1" 
@@ -355,7 +342,7 @@ F 3 "~" H 4300 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small_US R?
 U 1 1 5FD4C08F
 P 4150 1300
 AR Path="/5FD4C08F" Ref="R?"  Part="1" 
@@ -372,7 +359,7 @@ Wire Wire Line
 Wire Wire Line
 	4150 1150 4150 1200
 $Comp
-L Device:R_Small R?
+L Device:R_Small_US R?
 U 1 1 5FD4C097
 P 5900 5250
 AR Path="/5FD4C097" Ref="R?"  Part="1" 
@@ -486,50 +473,48 @@ F 3 "~" H 3800 2700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3500 2700 3700 2700
-Wire Wire Line
-	3900 2700 4100 2700
 $Comp
 L Device:C_Small C?
 U 1 1 5FD4C0D2
-P 7300 3700
+P 1550 6600
 AR Path="/5FD4C0D2" Ref="C?"  Part="1" 
 AR Path="/5FD145BE/5FD4C0D2" Ref="C?"  Part="1" 
-F 0 "C?" H 7400 3700 50  0000 L CNN
-F 1 "18pF" H 7300 3600 50  0000 L CNN
-F 2 "" H 7300 3700 50  0001 C CNN
-F 3 "~" H 7300 3700 50  0001 C CNN
-	1    7300 3700
+F 0 "C?" H 1650 6600 50  0000 L CNN
+F 1 "18pF" H 1550 6500 50  0000 L CNN
+F 2 "" H 1550 6600 50  0001 C CNN
+F 3 "~" H 1550 6600 50  0001 C CNN
+	1    1550 6600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 5FD4C0D8
-P 7700 3700
+P 1950 6600
 AR Path="/5FD4C0D8" Ref="C?"  Part="1" 
 AR Path="/5FD145BE/5FD4C0D8" Ref="C?"  Part="1" 
-F 0 "C?" H 7800 3700 50  0000 L CNN
-F 1 "18pF" H 7700 3600 50  0000 L CNN
-F 2 "" H 7700 3700 50  0001 C CNN
-F 3 "~" H 7700 3700 50  0001 C CNN
-	1    7700 3700
+F 0 "C?" H 2050 6600 50  0000 L CNN
+F 1 "18pF" H 1950 6500 50  0000 L CNN
+F 2 "" H 1950 6600 50  0001 C CNN
+F 3 "~" H 1950 6600 50  0001 C CNN
+	1    1950 6600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7300 3300 7300 3600
+	1550 6200 1550 6500
 Wire Wire Line
-	7300 3800 7300 4050
+	1550 6700 1550 6950
 Wire Wire Line
-	7700 3400 7700 3600
+	1950 6300 1950 6500
 Wire Wire Line
-	7700 3800 7700 4050
+	1950 6700 1950 6950
 Wire Wire Line
-	7300 3200 7300 3300
+	1550 6100 1550 6200
 Wire Wire Line
-	7100 3100 7200 3100
+	1350 6000 1450 6000
 Wire Wire Line
-	7400 3100 7500 3100
+	1650 6000 1750 6000
 Wire Wire Line
-	7300 2900 7300 3000
+	1550 5800 1550 5900
 $Comp
 L Device:Crystal_GND24_Small Y?
 U 1 1 5FD4C0E6
@@ -552,7 +537,7 @@ Wire Wire Line
 Wire Wire Line
 	1650 1900 1750 1900
 $Comp
-L Device:R_Small R?
+L Device:R_Small_US R?
 U 1 1 5FD4C0F0
 P 1350 4100
 AR Path="/5FD4C0F0" Ref="R?"  Part="1" 
@@ -744,5 +729,53 @@ F 2 "" H 1200 3850 50  0001 C CNN
 F 3 "" H 1200 3850 50  0001 C CNN
 	1    1200 3850
 	1    0    0    -1  
+$EndComp
+$Comp
+L Timer:NE555D U?
+U 1 1 5FE4F839
+P 8100 2550
+F 0 "U?" H 7850 2150 50  0000 C CNN
+F 1 "NE555D" H 7850 2050 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8950 2150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 8950 2150 50  0001 C CNN
+	1    8100 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FE4FEF0
+P 8100 1750
+F 0 "#PWR?" H 8100 1600 50  0001 C CNN
+F 1 "VCC" H 8115 1923 50  0000 C CNN
+F 2 "" H 8100 1750 50  0001 C CNN
+F 3 "" H 8100 1750 50  0001 C CNN
+	1    8100 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FE50BA2
+P 8100 3150
+F 0 "#PWR?" H 8100 2900 50  0001 C CNN
+F 1 "GND" H 8105 2977 50  0000 C CNN
+F 2 "" H 8100 3150 50  0001 C CNN
+F 3 "" H 8100 3150 50  0001 C CNN
+	1    8100 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2700 4100 2700
+$Comp
+L Device:R_Small_US R?
+U 1 1 5FD4C07F
+P 3900 2100
+AR Path="/5FD4C07F" Ref="R?"  Part="1" 
+AR Path="/5FD145BE/5FD4C07F" Ref="R?"  Part="1" 
+F 0 "R?" V 4000 2050 50  0000 C CNN
+F 1 "1k" V 4000 2150 50  0000 C CNN
+F 2 "" H 3900 2100 50  0001 C CNN
+F 3 "~" H 3900 2100 50  0001 C CNN
+	1    3900 2100
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
