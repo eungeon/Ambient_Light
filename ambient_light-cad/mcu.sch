@@ -590,8 +590,6 @@ Text GLabel 5350 4800 2    50   Input ~ 0
 MOSI
 Text GLabel 5350 6000 2    50   Input ~ 0
 Reset
-Text GLabel 4100 2700 2    50   Input ~ 0
-Reset
 Connection ~ 5900 5000
 Wire Wire Line
 	5900 5000 6150 5000
@@ -697,8 +695,6 @@ F 3 "" H 8100 3300 50  0001 C CNN
 	1    8100 3300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3900 2700 4100 2700
 $Comp
 L Device:R_Small_US R?
 U 1 1 5FD4C07F
@@ -860,22 +856,14 @@ $EndComp
 $Comp
 L power:+3.3V #PWR?
 U 1 1 5FDC074A
-P 9050 2650
-F 0 "#PWR?" H 9050 2500 50  0001 C CNN
-F 1 "+3.3V" H 9065 2823 50  0000 C CNN
-F 2 "" H 9050 2650 50  0001 C CNN
-F 3 "" H 9050 2650 50  0001 C CNN
-	1    9050 2650
+P 9150 1750
+F 0 "#PWR?" H 9150 1600 50  0001 C CNN
+F 1 "+3.3V" H 9165 1923 50  0000 C CNN
+F 2 "" H 9150 1750 50  0001 C CNN
+F 3 "" H 9150 1750 50  0001 C CNN
+	1    9150 1750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9050 2650 9050 2700
-Wire Wire Line
-	9050 2700 9500 2700
-Wire Wire Line
-	9300 2350 9300 2500
-Wire Wire Line
-	9300 2500 9500 2500
 Wire Wire Line
 	7500 2750 7600 2750
 Wire Wire Line
@@ -983,29 +971,45 @@ Wire Wire Line
 $Comp
 L Amplifier_Operational:LM2904 U?
 U 2 1 5FF329A5
-P 9800 2600
-F 0 "U?" H 9800 2967 50  0000 C CNN
-F 1 "LM2904" H 9800 2876 50  0000 C CNN
-F 2 "" H 9800 2600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm358.pdf" H 9800 2600 50  0001 C CNN
-	2    9800 2600
+P 9800 2250
+F 0 "U?" H 9800 2617 50  0000 C CNN
+F 1 "LM2904" H 9800 2526 50  0000 C CNN
+F 2 "" H 9800 2250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm358.pdf" H 9800 2250 50  0001 C CNN
+	2    9800 2250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8600 2350 9300 2350
 $Comp
 L Device:Q_PMOS_GSD Q?
 U 1 1 5FF3F91D
-P 10350 3000
-F 0 "Q?" V 10599 3000 50  0000 C CNN
-F 1 "Q_PMOS_GSD" V 10690 3000 50  0000 C CNN
-F 2 "" H 10550 3100 50  0001 C CNN
-F 3 "~" H 10350 3000 50  0001 C CNN
-	1    10350 3000
+P 10350 2650
+F 0 "Q?" V 10599 2650 50  0000 C CNN
+F 1 "Q_PMOS_GSD" V 10690 2650 50  0000 C CNN
+F 2 "" H 10550 2750 50  0001 C CNN
+F 3 "~" H 10350 2650 50  0001 C CNN
+	1    10350 2650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10100 2600 10350 2600
+	10100 2250 10350 2250
 Wire Wire Line
-	10350 2600 10350 2800
+	10350 2250 10350 2450
+Wire Wire Line
+	8600 2350 9500 2350
+Wire Wire Line
+	9500 2150 9150 2150
+Wire Wire Line
+	9150 1750 9150 2150
+Text GLabel 10700 2750 2    50   Input ~ 0
+Reset
+Wire Wire Line
+	10150 2750 10000 2750
+Wire Wire Line
+	10550 2750 10700 2750
+Text GLabel 4100 2700 2    50   Input ~ 0
+RST_MOS
+Text GLabel 10000 2750 0    50   Input ~ 0
+RST_MOS
+Wire Wire Line
+	3900 2700 4100 2700
 $EndSCHEMATC
