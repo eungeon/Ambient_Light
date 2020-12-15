@@ -1000,7 +1000,7 @@ Wire Wire Line
 	9500 2150 9150 2150
 Wire Wire Line
 	9150 1750 9150 2150
-Text GLabel 10700 2750 2    50   Input ~ 0
+Text GLabel 7450 4050 2    50   Input ~ 0
 Reset
 Wire Wire Line
 	10150 2750 10000 2750
@@ -1008,8 +1008,64 @@ Wire Wire Line
 	10550 2750 10700 2750
 Text GLabel 4100 2700 2    50   Input ~ 0
 RST_MOS
-Text GLabel 10000 2750 0    50   Input ~ 0
+Text GLabel 6750 4150 0    50   Input ~ 0
 RST_MOS
 Wire Wire Line
 	3900 2700 4100 2700
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 5FD8F28F
+P 7100 4150
+F 0 "SW?" H 7100 4435 50  0000 C CNN
+F 1 "SW_SPDT" H 7100 4344 50  0000 C CNN
+F 2 "" H 7100 4150 50  0001 C CNN
+F 3 "~" H 7100 4150 50  0001 C CNN
+	1    7100 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 4150 6900 4150
+Text GLabel 5350 6700 2    50   Input ~ 0
+D5
+Wire Wire Line
+	5100 6700 5350 6700
+Text GLabel 7600 4250 2    50   Input ~ 0
+D5
+Wire Wire Line
+	7450 4050 7300 4050
+Wire Wire Line
+	7300 4250 7450 4250
+$Comp
+L Device:R_Small_US R?
+U 1 1 5FDB538A
+P 7450 4450
+AR Path="/5FDB538A" Ref="R?"  Part="1" 
+AR Path="/5FD145BE/5FDB538A" Ref="R?"  Part="1" 
+F 0 "R?" H 7509 4496 50  0000 L CNN
+F 1 "1k" H 7509 4405 50  0000 L CNN
+F 2 "" H 7450 4450 50  0001 C CNN
+F 3 "~" H 7450 4450 50  0001 C CNN
+	1    7450 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 4350 7450 4250
+Connection ~ 7450 4250
+Wire Wire Line
+	7450 4250 7600 4250
+$Comp
+L power:GND #PWR?
+U 1 1 5FDBE2D5
+P 7450 4650
+AR Path="/5FDBE2D5" Ref="#PWR?"  Part="1" 
+AR Path="/5FD145BE/5FDBE2D5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7450 4400 50  0001 C CNN
+F 1 "GND" H 7455 4477 50  0000 C CNN
+F 2 "" H 7450 4650 50  0001 C CNN
+F 3 "" H 7450 4650 50  0001 C CNN
+	1    7450 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 4650 7450 4550
 $EndSCHEMATC
