@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1950 3800 1150 800 
+S 1950 3800 1750 1150
 U 5FDBFA91
 F0 "power" 50
 F1 "power.sch" 50
