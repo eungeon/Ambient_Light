@@ -484,4 +484,150 @@ F 3 "~" H 4200 1550 50  0001 C CNN
 	1    4200 1550
 	-1   0    0    -1  
 $EndComp
+Text GLabel 7900 2500 2    50   Input ~ 0
+Reset
+Text GLabel 7050 2600 0    50   Input ~ 0
+RST_MOS
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 5FED71D9
+P 7400 2600
+AR Path="/5FD145BE/5FED71D9" Ref="SW?"  Part="1" 
+AR Path="/5FD145BE/5FD7B477/5FED71D9" Ref="SW?"  Part="1" 
+F 0 "SW?" H 7400 2885 50  0000 C CNN
+F 1 "SW_SPDT" H 7400 2794 50  0000 C CNN
+F 2 "" H 7400 2600 50  0001 C CNN
+F 3 "~" H 7400 2600 50  0001 C CNN
+	1    7400 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2600 7200 2600
+Text GLabel 7900 2700 2    50   Input ~ 0
+D5
+Wire Wire Line
+	7600 2700 7750 2700
+$Comp
+L Device:R_Small_US R?
+U 1 1 5FED71E2
+P 7750 2900
+AR Path="/5FED71E2" Ref="R?"  Part="1" 
+AR Path="/5FD145BE/5FED71E2" Ref="R?"  Part="1" 
+AR Path="/5FD145BE/5FD7B477/5FED71E2" Ref="R?"  Part="1" 
+F 0 "R?" H 7809 2946 50  0000 L CNN
+F 1 "1k" H 7809 2855 50  0000 L CNN
+F 2 "" H 7750 2900 50  0001 C CNN
+F 3 "~" H 7750 2900 50  0001 C CNN
+	1    7750 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2800 7750 2700
+Connection ~ 7750 2700
+Wire Wire Line
+	7750 2700 7900 2700
+$Comp
+L power:GND #PWR?
+U 1 1 5FED71EB
+P 7750 3100
+AR Path="/5FED71EB" Ref="#PWR?"  Part="1" 
+AR Path="/5FD145BE/5FED71EB" Ref="#PWR?"  Part="1" 
+AR Path="/5FD145BE/5FD7B477/5FED71EB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7750 2850 50  0001 C CNN
+F 1 "GND" H 7755 2927 50  0000 C CNN
+F 2 "" H 7750 3100 50  0001 C CNN
+F 3 "" H 7750 3100 50  0001 C CNN
+	1    7750 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 3100 7750 3000
+Wire Wire Line
+	7600 2500 7900 2500
+$Comp
+L Device:R_Small_US R?
+U 1 1 5FEDED8A
+P 9200 1550
+AR Path="/5FEDED8A" Ref="R?"  Part="1" 
+AR Path="/5FD145BE/5FEDED8A" Ref="R?"  Part="1" 
+F 0 "R?" H 9259 1596 50  0000 L CNN
+F 1 "1k" H 9259 1505 50  0000 L CNN
+F 2 "" H 9200 1550 50  0001 C CNN
+F 3 "~" H 9200 1550 50  0001 C CNN
+	1    9200 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5FEDED90
+P 9200 2150
+AR Path="/5FEDED90" Ref="SW?"  Part="1" 
+AR Path="/5FD145BE/5FEDED90" Ref="SW?"  Part="1" 
+F 0 "SW?" V 9150 2400 50  0000 C CNN
+F 1 "SW_Reset" V 9250 2500 50  0000 C CNN
+F 2 "" H 9200 2350 50  0001 C CNN
+F 3 "~" H 9200 2350 50  0001 C CNN
+	1    9200 2150
+	0    1    1    0   
+$EndComp
+Text GLabel 9450 1800 2    50   Input ~ 0
+Reset
+$Comp
+L power:VCC #PWR?
+U 1 1 5FEDED97
+P 9200 1350
+AR Path="/5FEDED97" Ref="#PWR?"  Part="1" 
+AR Path="/5FD145BE/5FEDED97" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9200 1200 50  0001 C CNN
+F 1 "VCC" H 9215 1523 50  0000 C CNN
+F 2 "" H 9200 1350 50  0001 C CNN
+F 3 "" H 9200 1350 50  0001 C CNN
+	1    9200 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5FEDED9D
+P 9000 2150
+F 0 "C?" H 9092 2196 50  0000 L CNN
+F 1 "100nF" H 9092 2105 50  0000 L CNN
+F 2 "" H 9000 2150 50  0001 C CNN
+F 3 "~" H 9000 2150 50  0001 C CNN
+	1    9000 2150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 2050 9000 1950
+Wire Wire Line
+	9000 2250 9000 2350
+Connection ~ 9200 1950
+Wire Wire Line
+	9200 2350 9200 2500
+Connection ~ 9200 2350
+Wire Wire Line
+	9000 1950 9200 1950
+$Comp
+L power:GND #PWR?
+U 1 1 5FEDEDA9
+P 9200 2500
+AR Path="/5FEDEDA9" Ref="#PWR?"  Part="1" 
+AR Path="/5FD145BE/5FEDEDA9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9200 2250 50  0001 C CNN
+F 1 "GND" H 9205 2327 50  0000 C CNN
+F 2 "" H 9200 2500 50  0001 C CNN
+F 3 "" H 9200 2500 50  0001 C CNN
+	1    9200 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 2350 9200 2350
+Wire Wire Line
+	9200 1350 9200 1450
+Wire Wire Line
+	9200 1650 9200 1800
+Wire Wire Line
+	9450 1800 9200 1800
+Connection ~ 9200 1800
+Wire Wire Line
+	9200 1800 9200 1950
 $EndSCHEMATC

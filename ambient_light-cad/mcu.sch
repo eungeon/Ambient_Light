@@ -524,32 +524,6 @@ Wire Wire Line
 	1550 2000 1550 2100
 Wire Wire Line
 	1650 1900 1750 1900
-$Comp
-L Device:R_Small_US R?
-U 1 1 5FD4C0F0
-P 1200 4150
-AR Path="/5FD4C0F0" Ref="R?"  Part="1" 
-AR Path="/5FD145BE/5FD4C0F0" Ref="R?"  Part="1" 
-F 0 "R?" H 1259 4196 50  0000 L CNN
-F 1 "1k" H 1259 4105 50  0000 L CNN
-F 2 "" H 1200 4150 50  0001 C CNN
-F 3 "~" H 1200 4150 50  0001 C CNN
-	1    1200 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW?
-U 1 1 5FD4C111
-P 1200 4750
-AR Path="/5FD4C111" Ref="SW?"  Part="1" 
-AR Path="/5FD145BE/5FD4C111" Ref="SW?"  Part="1" 
-F 0 "SW?" V 1150 5000 50  0000 C CNN
-F 1 "SW_Reset" V 1250 5100 50  0000 C CNN
-F 2 "" H 1200 4950 50  0001 C CNN
-F 3 "~" H 1200 4950 50  0001 C CNN
-	1    1200 4750
-	0    1    1    0   
-$EndComp
 $Sheet
 S 8800 4450 1950 1150
 U 5FD7B477
@@ -572,8 +546,6 @@ Text GLabel 5350 4900 2    50   Input ~ 0
 MISO
 Text GLabel 6150 5000 2    50   Input ~ 0
 SCK
-Text GLabel 1450 4400 2    50   Input ~ 0
-Reset
 Text GLabel 5350 4800 2    50   Input ~ 0
 MOSI
 Text GLabel 5350 6000 2    50   Input ~ 0
@@ -649,19 +621,6 @@ F 3 "" H 3750 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR?
-U 1 1 5FE43510
-P 1200 3950
-AR Path="/5FE43510" Ref="#PWR?"  Part="1" 
-AR Path="/5FD145BE/5FE43510" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1200 3800 50  0001 C CNN
-F 1 "VCC" H 1215 4123 50  0000 C CNN
-F 2 "" H 1200 3950 50  0001 C CNN
-F 3 "" H 1200 3950 50  0001 C CNN
-	1    1200 3950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small_US R?
 U 1 1 5FD4C07F
 P 4550 2100
@@ -674,113 +633,14 @@ F 3 "~" H 4550 2100 50  0001 C CNN
 	1    4550 2100
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 5FE3A260
-P 1000 4750
-F 0 "C?" H 1092 4796 50  0000 L CNN
-F 1 "100nF" H 1092 4705 50  0000 L CNN
-F 2 "" H 1000 4750 50  0001 C CNN
-F 3 "~" H 1000 4750 50  0001 C CNN
-	1    1000 4750
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1000 4650 1000 4550
-Wire Wire Line
-	1000 4850 1000 4950
-Connection ~ 1200 4550
-Wire Wire Line
-	1200 4950 1200 5100
-Connection ~ 1200 4950
-Wire Wire Line
-	1000 4550 1200 4550
-$Comp
-L power:GND #PWR?
-U 1 1 5FD4C10B
-P 1200 5100
-AR Path="/5FD4C10B" Ref="#PWR?"  Part="1" 
-AR Path="/5FD145BE/5FD4C10B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1200 4850 50  0001 C CNN
-F 1 "GND" H 1205 4927 50  0000 C CNN
-F 2 "" H 1200 5100 50  0001 C CNN
-F 3 "" H 1200 5100 50  0001 C CNN
-	1    1200 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1000 4950 1200 4950
-Wire Wire Line
-	1200 3950 1200 4050
-Wire Wire Line
-	1200 4250 1200 4400
-Wire Wire Line
-	1450 4400 1200 4400
-Connection ~ 1200 4400
-Wire Wire Line
-	1200 4400 1200 4550
-Text GLabel 7600 4050 2    50   Input ~ 0
-Reset
 Text GLabel 4750 2700 2    50   Input ~ 0
-RST_MOS
-Text GLabel 6750 4150 0    50   Input ~ 0
 RST_MOS
 Wire Wire Line
 	4550 2700 4750 2700
-$Comp
-L Switch:SW_SPDT SW?
-U 1 1 5FD8F28F
-P 7100 4150
-F 0 "SW?" H 7100 4435 50  0000 C CNN
-F 1 "SW_SPDT" H 7100 4344 50  0000 C CNN
-F 2 "" H 7100 4150 50  0001 C CNN
-F 3 "~" H 7100 4150 50  0001 C CNN
-	1    7100 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6750 4150 6900 4150
 Text GLabel 5350 6700 2    50   Input ~ 0
 D5
 Wire Wire Line
 	5100 6700 5350 6700
-Text GLabel 7600 4250 2    50   Input ~ 0
-D5
-Wire Wire Line
-	7300 4250 7450 4250
-$Comp
-L Device:R_Small_US R?
-U 1 1 5FDB538A
-P 7450 4450
-AR Path="/5FDB538A" Ref="R?"  Part="1" 
-AR Path="/5FD145BE/5FDB538A" Ref="R?"  Part="1" 
-F 0 "R?" H 7509 4496 50  0000 L CNN
-F 1 "1k" H 7509 4405 50  0000 L CNN
-F 2 "" H 7450 4450 50  0001 C CNN
-F 3 "~" H 7450 4450 50  0001 C CNN
-	1    7450 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7450 4350 7450 4250
-Connection ~ 7450 4250
-Wire Wire Line
-	7450 4250 7600 4250
-$Comp
-L power:GND #PWR?
-U 1 1 5FDBE2D5
-P 7450 4650
-AR Path="/5FDBE2D5" Ref="#PWR?"  Part="1" 
-AR Path="/5FD145BE/5FDBE2D5" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7450 4400 50  0001 C CNN
-F 1 "GND" H 7455 4477 50  0000 C CNN
-F 2 "" H 7450 4650 50  0001 C CNN
-F 3 "" H 7450 4650 50  0001 C CNN
-	1    7450 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7450 4650 7450 4550
 $Comp
 L Connector:TestPoint TP?
 U 1 1 5FDAF527
@@ -899,8 +759,6 @@ Wire Wire Line
 Connection ~ 5300 6000
 Wire Wire Line
 	5300 6000 5350 6000
-Wire Wire Line
-	7300 4050 7600 4050
 Wire Wire Line
 	5300 5850 5300 6000
 $EndSCHEMATC
