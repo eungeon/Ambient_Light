@@ -135,7 +135,7 @@ AR Path="/5FD145BE/5FD98793" Ref="J?"  Part="1"
 AR Path="/5FD145BE/5FD7B477/5FD98793" Ref="J?"  Part="1" 
 F 0 "J?" H 5378 1576 50  0000 L CNN
 F 1 "LED_Strip_conn_1" H 5378 1485 50  0000 L CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-1815_2x09_P3.00mm_Vertical" H 5350 1550 50  0001 C CNN
+F 2 "ambient_light-cad:NW-HA2.5-3AW_Horizontal" H 5350 1550 50  0001 C CNN
 F 3 "~" H 5350 1550 50  0001 C CNN
 	1    5350 1550
 	1    0    0    -1  
@@ -185,7 +185,7 @@ AR Path="/5FD145BE/5FD987AB" Ref="J?"  Part="1"
 AR Path="/5FD145BE/5FD7B477/5FD987AB" Ref="J?"  Part="1" 
 F 0 "J?" H 5378 2676 50  0000 L CNN
 F 1 "LED_Strip_conn_2" H 5378 2585 50  0000 L CNN
-F 2 "Connector_Molex:Molex_CLIK-Mate_505405-0570_1x05-1MP_P1.50mm_Vertical" H 5350 2650 50  0001 C CNN
+F 2 "ambient_light-cad:NW-HA2.5-3AW_Horizontal" H 5350 2650 50  0001 C CNN
 F 3 "~" H 5350 2650 50  0001 C CNN
 	1    5350 2650
 	1    0    0    -1  
