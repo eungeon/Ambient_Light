@@ -92,11 +92,12 @@ F 3 "~" H 2850 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J?
+L ambient_light-cad-rescue:USB_C_Receptacle_USB2.0-Connector J?
 U 1 1 5FD84D9D
 P 1650 1950
 AR Path="/5FD145BE/5FD84D9D" Ref="J?"  Part="1" 
 AR Path="/5FD145BE/5FD7B477/5FD84D9D" Ref="J?"  Part="1" 
+AR Path="/5FD84D9D" Ref="J?"  Part="1" 
 F 0 "J?" H 1757 2817 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 1757 2726 50  0000 C CNN
 F 2 "Connector_USB:USB_C_Receptacle_Amphenol_12401610E4-2A" H 1800 1950 50  0001 C CNN
@@ -413,7 +414,7 @@ AR Path="/5FD145BE/5FDA9506" Ref="J?"  Part="1"
 AR Path="/5FD145BE/5FD7B477/5FDA9506" Ref="J?"  Part="1" 
 F 0 "J?" H 7350 1967 50  0000 C CNN
 F 1 "ICSP" H 7350 1876 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 7300 1650 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 7300 1650 50  0001 C CNN
 F 3 "~" H 7300 1650 50  0001 C CNN
 	1    7300 1650
 	1    0    0    -1  
