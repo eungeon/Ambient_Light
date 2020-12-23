@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 4 4
 Title ""
 Date ""
 Rev ""
@@ -302,7 +302,7 @@ F 3 "~" H 5050 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ambient_light-cad:LMR14050SDDAR U?
+L ambient_light-cad-rescue:LMR14050SDDAR-ambient_light-cad U?
 U 1 1 5FDC2F39
 P 4550 1700
 F 0 "U?" H 4550 2167 50  0000 C CNN

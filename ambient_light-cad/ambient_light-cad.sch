@@ -18,6 +18,8 @@ S 1400 5750 1900 1200
 U 5FD145BE
 F0 "mcu" 50
 F1 "mcu.sch" 50
+$EndSheet
+$Sheet
 S 1950 3800 1750 1150
 U 5FDBFA91
 F0 "power" 50
